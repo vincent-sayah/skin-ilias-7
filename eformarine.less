@@ -1,0 +1,525 @@
+@import "../../../../templates/default/delos";
+// Import Custom Less Files here
+@import "eformarine-variables.less";
+/*@import "src/Panel/panel.less";*/
+
+
+@import "Services/UIComponent/Tabs/delos.less";
+@import "UI/MainControls/Slate/slate.less";
+
+/* Variable less  :  il-content-bg : #f4f6fb  */
+
+/* PAGE D'AUTHENTIFICATION */
+.ilStartupSection>.form-horizontal.preventDoubleSubmission>.form-horizontal>.ilFormFooter.clearfix>.col-sm-6.ilFormCmds>.btn-default.btn.btn-sm{
+    color: white;
+    background-color: #d60725;
+    border-color: #d60725;
+    border-radius: 20px;
+    box-shadow: 0px -3px 8px #666666;
+    font-size: 10px;
+    padding: 5px 30px 5px 30px;
+    font-weight: 900;
+	margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.ilStartupSection>.form-horizontal.preventDoubleSubmission>.form-horizontal>.ilFormFooter.clearfix>.col-sm-6.ilFormCmds>.btn-default.btn.btn-sm:hover{
+    background-color: #001b39;
+	border-color: #001b39;
+}
+
+.SectionLogin{
+	/* border: solid 2px; */
+	/* background-color : gray; */
+	/* box-shadow: 1px 1px 1px -5px #cbccd1, 5px 4px 5px -1px #0b0b0b; */
+	/* background-color: white; */
+	/* display: inline-block; */
+	/* font-weight: 700; */
+	/* text-align: center; */
+	/* width: 60%; */
+	/* width: max-content; */
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Rowlogin {
+	box-shadow: 1px 1px 1px -5px #cbccd1, 5px 4px 5px -1px #0b0b0b;
+		
+}
+
+.LogoLogin{
+    background-color: white;
+}
+
+div.ilStartupSection form.form-horizontal {
+    /* margin: auto; */
+    width: 40em;
+}
+
+.ilStartupSection > .form-horizontal.preventDoubleSubmission > .form-horizontal > .ilFormHeader{
+  background-color: #f4f6fb;
+  text-align: center;
+}
+
+.ilStartupSection > .form-horizontal.preventDoubleSubmission > .form-horizontal > .ilFormHeader > h2.ilHeader {
+	 color:#001b39;
+	 font-size:15px;
+	 font-weight:bold;
+}
+
+.ilStartupSection > .form-horizontal.preventDoubleSubmission > .form-horizontal > .form-group > .col-sm-3.control-label {
+	 color:#001b39;
+	 font-weight:bold;
+	  font-size:13px;
+	  padding-left: 0px;
+    padding-right: 0px;
+	 
+}
+
+.ilStartupSection > .ilStartupSection > a.il_ContainerItemCommand {
+	font-size: 11px;
+    font-weight: bold;
+	color: #001b39;
+}
+
+.ilStartupSection {
+    padding-top: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 680px){ /*adaptation formulaire login pour petit ecran */
+div.ilStartupSection form.form-horizontal {
+    margin: auto;
+    width: 100%;
+}
+}
+
+
+
+/*DESACTIVER DIV DE LA PAGE ACCUEIL */
+.img_hautbandeau, .acces_ecole{
+	display:none;
+}
+/*BANDEAU HAUT*/
+.header-inner {
+	background-color: white;
+}
+.breadcrumb_wrapper {
+    background: white;
+}
+.breadcrumbs {
+    background-color: white;
+}
+
+/* .media-object#headerimage {
+    width: 45px;
+    height: 45px;
+    margin-top: 3px;
+    margin-right: 10px;
+    float: none;
+} */
+
+/*FIL D'ARIANNE*/
+.breadcrumb_wrapper .breadcrumb > span + span:before {
+    content: " / ";
+    color: #737373;
+    padding: 0px 0px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #D60725;
+    font-weight: 700;
+}
+
+.breadcrumb_wrapper .breadcrumb span.crumb a {
+    color: #001b39;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#headerimage { /*eclaircir icone objet bandeau haut */
+    width: 45px;
+    height: 45px;
+    margin-top: 3px;
+    margin-right: 10px;
+    filter: brightness(1000);
+}
+
+@media (max-width: 680px){ /*supprimer header icone objet pour petit ecran */
+	.media-object#headerimage {
+		display:none;
+		/* width: 45px; */
+		/* height: 45px; */
+		/* margin-top: 3px; */
+		/* margin-right: 10px; */
+		/* float: none; */
+	}
+}
+
+/*HEADER PAGE ARRONDI FIXE*/
+.Bandeau_haut_app_fond{
+    background-color: #001b39;
+    position: sticky; /* passer l'attribut position: sticky; en position: relative;  pour un header arrondi non-fixe */
+    left: 0px;
+    z-index: 301;
+    top: 0px;
+}
+
+.Bandeau_haut_app{
+    background-color: #f4f6fb;
+    border-radius: 40px 40px 0px 0px;
+    margin-left: 0px;
+    border-left-width: 0px;
+    padding-left: 0px;
+    height: 60px;
+}
+
+.il-layout-page-content {
+    border-left: 10px solid #001b39;
+}
+
+.bordure_droite {
+	border-right: 10px solid #001b39;
+}
+
+/*TITRE ET DESCRIPTION OBJET DANS LE BANDEAU DU HAUT HEADER WHITE,BOLD, UPPERCASE*/
+a#il_mhead_t_focus {
+    color: white;
+    vertical-align: middle;
+    font-size: 26px;
+    cursor: default;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+a#il_mhead_t_focus:after  { /*Ajout point rouge apres titre de l'objet */
+    content: ".";
+    color: #d60725;
+    font-size: 30px;
+}
+
+
+div.ilHeaderDesc {
+    font-size: 90%;
+    padding: 0;
+    color: white;
+    font-weight: 600;
+}
+
+h1.ilHeader {
+    padding: 0px 0 0;
+}
+
+div.il_HeaderInner.media {
+    margin-bottom: 30px;
+}
+
+
+/*MENU TAB ET SUB TAB FIXE DANS BANDEAU DU HAUT*/
+#ilTab {
+    padding: 0;
+    margin: 0px 15px 23px;
+    border: 0 none;
+}
+
+.tab-menu {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
+
+.tab-sousmenu{
+    position: absolute;
+    left: 50px;
+	/* margin-top: 170px; */
+	top:90%;
+}
+
+/*BACKGROUND PAGE PRINCIPALE*/
+.ilToolbar.navbar {
+    border: 0 none;
+    background-color: #f4f6fb;
+} 
+
+.ilObjListRow {
+    border-bottom: 2px solid #cbccd1;
+    background-color: white;
+}
+
+.ilContainerTileRows {
+    background-color: #f4f6fb;
+}
+
+
+/*CARD THUMBAIL*/
+
+@media (min-width: 1200px){ /*reduction de 20% (au lieu de 25%) des cards en mode ecran large */
+.col-lg-3 {
+    width: 20%;
+}
+}
+
+.row-eq-height { /*card centrés sur les lignes */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.il-card.thumbnail {
+    margin-bottom: 0px;
+    font-size: 12px;
+    border: 1px solid #CBCCD1;
+    /*border-radius: 40px 0px 40px 0;*/
+	box-shadow: 1px 1px 1px -5px #cbccd1, 5px 4px 5px -1px #cbccd1;
+	background-color: white;
+	
+}
+
+.il-card .il-card-repository-head {
+    background-color: #001b39;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 47px;
+    padding: 0 6px;
+    z-index: 300;
+    /*border-radius: 40px 0px 0px 0;*/
+	padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.il-card .il-card-image-container {
+    width: 100%;
+    padding-top: 40%;
+    position: relative;
+	border-bottom: 2px solid #CBCCD1;  	
+}
+.il-card .il-card-image-container:hover {
+       filter: contrast(1.2);
+}
+
+
+.il-card img.img-responsive, .il-card img.img-standard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto; 
+    max-height: 100%;
+    /* margin: 0; */
+    z-index: 100;
+}
+
+
+.il-card .caption {
+    padding-top: 6px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+	font-weight: 650;
+	color: #001b39;
+}
+
+.caption.card-title{
+	text-align: right;	
+}
+
+.il-card .card-title .btn, .il-card .card-title a {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #001b39;
+	text-align: right;
+}
+
+
+
+.il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button {
+    background-color: inherit;
+    border: 0px;
+    width: 29px;
+    height: 29px;
+}
+
+.il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button > span.caret {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: px;
+    vertical-align: middle;
+    border-top: 10px dashed;
+    border-top: 7px solid \9;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+
+.il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button.btn-default:hover {
+	color:#d60725;			
+}
+
+
+.row-eq-height {
+    justify-content: normal; /*Card non centré */
+}
+
+
+/*MODIF HEADER LISTE TYPE OBJET"*/
+.row.ilContainerBlockHeader{
+    border-radius: 20px 20px 0px 0px;
+}
+h2.ilHeader {
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #001b39;
+}
+/*MODIF BOUTON ACTION*/
+.btn-default {
+    color: white;
+    background-color: #001b39;
+    border-radius: 8px;
+}
+button.btn-default:hover{
+background-color: #D60725;
+}
+
+.btn.btn-default:hover{
+border-color: #D60725;
+background-color: #D60725;
+}
+
+
+.btn-primary {
+    color: white;
+    background-color: #557b2e;
+    border-color: #557b2e;
+    border-radius: 8px;
+}
+
+/*MODIF PANEL FONCTIONNALITE*/
+.panel-secondary {
+    margin-bottom: 20px;
+    background-color: #F4F6FB;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: 1px 1px 1px -5px #001b39, 5px 4px 5px -1px #001b39;
+}
+	
+	
+
+/*MODIF DU Z-INDEX POUR VUE BOUTON "VUE MEMBRE"*/
+.il-mode-info {
+    border-top: 3px solid #B54F00;
+    border-left: 3px solid #B54F00;
+    border-right: 3px solid #B54F00;
+    text-align: center;
+    height: 30px;
+    margin-bottom: -30px;
+    z-index: 302;
+    position: static;
+}
+
+
+/*MODIF MENU LATERAL*/
+
+a.il-link.link-bulky:hover .bulky-label{
+	color:white;
+}
+
+a.il-link.link-bulky:hover .icon{
+	filter: invert(1);
+}
+
+.il-maincontrols-slate-content>.btn.btn-bulky.disengaged:hover .icon{
+	filter: invert(1);
+}
+
+.il-maincontrols-slate-content>.btn.btn-bulky.engaged:focus .icon{
+	filter: invert(1);
+}
+
+.il-maincontrols-slate-content>.btn.btn-bulky.engaged:hover .icon{
+	filter: invert(1);
+}
+
+.ilExplorerContainer {
+    background-color: #F4F6FB;
+}
+
+.jstree.jstree-default a:hover {
+    text-decoration: underline;
+}
+
+.il-mainbar-close-slates {
+    background-color: #CBCCD1;
+}
+
+.icon.small { /*taille icone menu latéral */
+    height: 35px;
+    line-height: 20px;
+}
+
+/*MODIF couleur police info des formulaires */
+.form-horizontal>.ilFormHeader.clearfix>.ilHeaderDesc {
+	color:#001B39;
+}
+
+/*MODIF couleur AGENDA */
+table.calmini td.calminitoday {
+    background-color: #001B39;
+}
+
+/*MODIF couleur TAG (mot cles) */
+.ilTag {
+    background-color: #001b39;
+    color: #ffffff;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 1px 5px;
+    margin: 2px 4px 2px 0;
+    border-radius: 3px;
+}
+
+a.ilTag:hover, a.ilTag:active {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #d60725;
+}
+
+.ilTag.ilHighlighted {
+    background-color: #D60725;
+}
+
+div.ilc_section_Additional, a.ilc_section_Additional { /* bloc info ACCUEIL NFS */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 60px;
+    /* background-image: url(../../../libs/ilias/Style/basic_style/images/additional.svg); */
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    background-color: #f5f7fa;
+    border-style: none;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: #001b39;
+    color: white;
+}
+
+
+/*BACKGROUND FOOTER*/
+footer {
+	background-color: #001b39;
+}

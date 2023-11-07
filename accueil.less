@@ -1,0 +1,567 @@
+@import "../../../../templates/default/delos";
+// Import Custom Less Files here
+@import "accueil-variables.less";
+
+@import "Services/UIComponent/Tabs/delos.less";
+@import "UI/MainControls/Slate/slate.less";
+
+/* Variable less  :  il-content-bg : #f4f6fb  */
+
+/* PAGE D'AUTHENTIFICATION */
+.ilStartupSection>.form-horizontal.preventDoubleSubmission>.form-horizontal>.ilFormFooter.clearfix>.col-sm-6.ilFormCmds>.btn-default.btn.btn-sm{
+    color: white;
+    background-color: #d60725;
+    border-color: #d60725;
+    border-radius: 20px;
+    box-shadow: 0px -3px 8px #666666;
+    font-size: 10px;
+    padding: 5px 30px 5px 30px;
+    font-weight: 900;
+	margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.ilStartupSection>.form-horizontal.preventDoubleSubmission>.form-horizontal>.ilFormFooter.clearfix>.col-sm-6.ilFormCmds>.btn-default.btn.btn-sm:hover{
+    background-color: #001b39;
+	border-color: #001b39;
+}
+
+.SectionLogin{
+	/* border: solid 2px; */
+	/* background-color : gray; */
+	/* box-shadow: 1px 1px 1px -5px #cbccd1, 5px 4px 5px -1px #0b0b0b; */
+	/* background-color: white; */
+	/* display: inline-block; */
+	/* font-weight: 700; */
+	/* text-align: center; */
+	/* width: 60%; */
+	/* width: max-content; */
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Rowlogin {
+	box-shadow: 1px 1px 1px -5px #cbccd1, 5px 4px 5px -1px #0b0b0b;
+		
+}
+
+.LogoLogin{
+    background-color: white;
+}
+
+div.ilStartupSection form.form-horizontal {
+    /* margin: auto; */
+    width: 40em;
+}
+
+.ilStartupSection > .form-horizontal.preventDoubleSubmission > .form-horizontal > .ilFormHeader{
+  background-color: #f4f6fb;
+  text-align: center;
+}
+
+.ilStartupSection > .form-horizontal.preventDoubleSubmission > .form-horizontal > .ilFormHeader > h2.ilHeader {
+	 color:#001b39;
+	 font-size:15px;
+	 font-weight:bold;
+}
+
+.ilStartupSection > .form-horizontal.preventDoubleSubmission > .form-horizontal > .form-group > .col-sm-3.control-label {
+	 color:#001b39;
+	 font-weight:bold;
+	  font-size:13px;
+	  padding-left: 0px;
+    padding-right: 0px;
+	 
+}
+
+.ilStartupSection > .ilStartupSection > a.il_ContainerItemCommand {
+	font-size: 11px;
+    font-weight: bold;
+	color: #001b39;
+}
+
+.ilStartupSection {
+    padding-top: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 680px){ /*adaptation formulaire login pour petit ecran */
+div.ilStartupSection form.form-horizontal {
+    margin: auto;
+    width: 100%;
+}
+}
+
+/*BANDEAU HAUT*/
+.header-inner {
+	background-color: white;
+}
+
+.breadcrumb_wrapper {
+    background: white;
+}
+
+.breadcrumbs {
+    background-color: white;
+}
+
+#headerimage { /*eclaircir icone objet bandeau haut */
+    width: 45px;
+    height: 45px;
+    margin-top: 3px;
+    margin-right: 10px;
+    filter: brightness(1000);
+}
+
+/*FIL D'ARIANNE*/
+.breadcrumb_wrapper .breadcrumb > span + span:before {
+    content: " / ";
+    color: #737373;
+    padding: 0px 0px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #D60725;
+    font-weight: 700;
+}
+
+.breadcrumb_wrapper .breadcrumb span.crumb a {
+    color: #001b39;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/*HEADER PAGE ARRONDI FIXE*/
+.Bandeau_haut_app_fond{
+    background-color: #001b39;
+    position: sticky; /* passer l'attribut position: sticky; en position: relative;  pour un header arrondi non-fixz */
+    left: 0px;
+    z-index: 301;
+    top: 0px;
+}
+
+.Bandeau_haut_app{
+    background-color: #f4f6fb;
+    border-radius: 40px 40px 0px 0px;
+    margin-left: 0px;
+    border-left-width: 0px;
+    padding-left: 0px;
+    height: 60px;
+}
+
+.il-layout-page-content {
+    border-left: 10px solid #001b39;
+}
+
+.bordure_droite {
+	border-right: 10px solid #001b39;
+}
+
+/*TITRE ET DESCRIPTION OBJET DANS LE BANDEAU DU HAUT HEADER WHITE,BOLD, UPPERCASE*/
+/* a#il_mhead_t_focus { */
+    /* color: white; */
+    /* vertical-align: middle; */
+    /* font-size: 26px; */
+    /* cursor: default; */
+    /* text-transform: uppercase; */
+    /* font-weight: 700; */
+/* } */
+/* a#il_mhead_t_focus:after  { /*Ajout point rouge apres titre de l'objet */
+    /* content: "."; */
+    /* color: #d60725; */
+    /* font-size: 30px; */
+/* } */
+
+
+div.ilHeaderDesc {
+    font-size: 90%;
+    padding: 0;
+    color: white;
+    font-weight: 600;
+}
+
+h1.ilHeader {
+    padding: 0px 0 0;
+}
+
+div.il_HeaderInner.media {
+    margin-bottom: 30px;
+}
+
+
+/*MENU TAB ET SUB TAB FIXE DANS BANDEAU DU HAUT*/
+#ilTab {
+    padding: 0;
+    margin: 0px 15px 23px;
+    border: 0 none;
+}
+
+.tab-menu {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
+
+.tab-sousmenu{
+    position: absolute;
+    left: 50px;
+	/* margin-top: 170px; */
+	top:90%;
+}
+
+/*BACKGROUND PAGE PRINCIPALE*/
+.ilToolbar.navbar {
+    border: 0 none;
+    background-color: #f4f6fb;
+} 
+
+.ilObjListRow {
+    border-bottom: 2px solid #cbccd1;
+    background-color: #f4f6fb; 
+}
+
+
+/*CARD THUMBAIL*/
+
+.il-card.thumbnail {
+    margin-bottom: 0px;
+    font-size: 12px;
+    border: 1px solid #CBCCD1;
+    /*border-radius: 40px 0px 40px 0;*/
+	box-shadow: 1px 1px 1px -5px #cbccd1, 5px 4px 5px -1px #cbccd1;
+	background-color: white;
+	
+}
+
+.il-card .il-card-repository-head {
+    background-color: #001b39;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 47px;
+    padding: 0 6px;
+    z-index: 300;
+    /*border-radius: 40px 0px 0px 0;*/
+	padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.il-card .il-card-image-container {
+    width: 100%;
+    padding-top: 40%;
+    position: relative;
+	border-bottom: 2px solid #CBCCD1;  	
+}
+
+
+.il-card img.img-responsive, .il-card img.img-standard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: 100%;
+    margin: 0;
+    z-index: 100;
+}
+
+.il-card .caption {
+    padding-top: 6px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+	font-weight: 650;
+	color: #001b39;
+}
+
+.caption.card-title{
+	text-align: right;
+	
+}
+.il-card .card-title .btn, .il-card .card-title a {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #001b39;
+	text-align: right;
+}
+
+.il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button {
+    background-color: inherit;
+    border: 0px;
+    width: 29px;
+    height: 29px;
+}
+
+.il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button > span.caret {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: px;
+    vertical-align: middle;
+    border-top: 10px dashed;
+    border-top: 7px solid \9;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+
+.il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button.btn-default:hover {
+	color:#d60725;			
+}
+
+
+/*MODIF HEADER LISTE TYPE OBJET"*/
+.row.ilContainerBlockHeader{
+    border-radius: 20px 20px 20px 20px;
+    /* border-left: 2px solid; */
+    /* box-shadow: 1px 1px 1px -5px #001b39, 5px 4px 5px -1px #001b39; */
+}
+h2.ilHeader {
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #001b39;
+}
+/*MODIF BOUTON ACTION*/
+.btn-default {
+    color: white;
+    background-color: #001b39;
+    border-radius: 8px;
+}
+button.btn-default:hover{
+background-color: #D60725;
+}
+
+.btn.btn-default:hover{
+border-color: #D60725;
+background-color: #D60725;
+}
+
+
+.btn-primary {
+    color: white;
+    background-color: #557b2e;
+    border-color: #557b2e;
+    border-radius: 8px;
+}
+
+/*MODIF PANEL FONCTIONNALITE*/
+.panel-secondary {
+    margin-bottom: 20px;
+    background-color: #F4F6FB;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: 1px 1px 1px -5px #001b39, 5px 4px 5px -1px #001b39;
+}
+	
+	
+
+/*MODIF DU Z-INDEX POUR VUE BOUTON "VUE MEMBRE"*/
+.il-mode-info {
+    border-top: 3px solid #B54F00;
+    border-left: 3px solid #B54F00;
+    border-right: 3px solid #B54F00;
+    text-align: center;
+    height: 30px;
+    margin-bottom: -30px;
+    z-index: 302;
+    position: static;
+}
+
+/*MODIF MENU LATERAL*/
+
+a.il-link.link-bulky:hover .bulky-label{
+	color:white;
+}
+
+a.il-link.link-bulky:hover .icon{
+	filter: invert(1);
+}
+
+.il-maincontrols-slate-content>.btn.btn-bulky.disengaged:hover .icon{
+	filter: invert(1);
+}
+
+.il-maincontrols-slate-content>.btn.btn-bulky.engaged:focus .icon{
+	filter: invert(1);
+}
+
+.il-maincontrols-slate-content>.btn.btn-bulky.engaged:hover .icon{
+	filter: invert(1);
+}
+
+.ilExplorerContainer {
+    background-color: #F4F6FB;
+}
+
+.jstree.jstree-default a:hover {
+    text-decoration: underline;
+}
+
+.il-mainbar-close-slates {
+    background-color: #CBCCD1;
+}
+
+.icon.small { /*taille icone menu latéral */
+    height: 35px;
+    line-height: 20px;
+}
+
+/*MODIF couleur police info des formulaires */
+.form-horizontal>.ilFormHeader.clearfix>.ilHeaderDesc {
+	color:#001B39;
+}
+
+/*BACKGROUND FOOTER*/
+footer {
+	background-color: #001b39;
+}
+
+
+/* ############################################################################# */
+/* ############################################################################# */
+/* #################### AJOUT POUR PAGE ACCUEIL ################################ */
+/* ############################################################################# */
+/* ############################################################################# */
+
+/* CACHER ICONE OBJET DU TITRE */
+
+#headerimage {
+    display: none;
+}
+
+/* POLICE TITRE ET DESCRIPTION*/
+
+a#il_mhead_t_focus {
+    color: white;
+    vertical-align: middle;
+    font-size: 35px;
+    cursor: default;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+div.il_HeaderInner.media{
+	padding-left:5%;
+}
+
+div.ilHeaderDesc {
+    font-size: 27px;
+    padding: 0;
+    color: white;
+    font-weight: 700;
+    width: 300px;
+}
+
+.media.il_HeaderInner>.media-body>.ilHeaderDesc:after{
+	content: ".";
+    color: #d60725;
+    font-size: 30px;	
+}
+
+/* BOUTON ACCES ECOLE */
+.acces_ecole {
+    bottom: 35px;
+    left: 4%;
+    position: absolute;
+	width: 310px;
+}
+
+.acces_ecole >.nav-tabs {
+    border-bottom: none;
+}
+.acces_ecole >.nav-tabs > li > a {
+    border-radius: 40px;
+	font-weight: 600;
+	background-color: #D60725;
+}
+
+/* .acces_ecole >.nav-tabs > li > a:focus { */
+    /* background-color: #CBCCD1; */
+/* } */
+
+/* CENTRER MENU ET SOUS MENU */
+.tab-menu {
+    position: ;
+    bottom: 20px;
+    left: 35%;
+    position: absolute;
+}
+
+.tab-sousmenu {
+    position: absolute;
+    left: 35%;
+    /* margin-top: 170px; */
+    top: 90%;
+}
+
+.img-hautbandeau{
+    position: absolute;
+    left: 80%;
+	background: transparent url("images/style_eformarine/ordi.png") no-repeat;
+    width: 250px;
+    height: 100%;
+    background-size: contain;
+}
+
+/*BANDEAU PAGE ACCUEIL RESPONSIVE */
+
+@media screen {
+ @media(max-width: 1040px) {
+	
+	.tab-menu {
+    display: none;	
+	}
+	.tab-sousmenu{
+    display: none;	
+	}
+	.img-hautbandeau {
+    position: absolute;
+    left: 70%;
+    background: transparent url("images/style_eformarine/ordi.png") no-repeat;
+    width: 150px;
+    height: 100%;
+    background-size: contain;
+    top: 70px;
+}
+ 
+}
+}
+
+@media screen {
+ @media(max-width: 466px) {
+	
+	.tab-menu {
+    display: none;	
+	}
+	.tab-sousmenu{
+    display: none;	
+	}
+	.img-hautbandeau {
+    display:none;
+}
+ 
+}
+}
+
+/*EDITION DE PAGE MENU PAGE ACCUEIL */
+div.ilc_section_Separator, a.ilc_section_Separator {
+    border-top-style: solid;
+    border-color: #CBCCD1;
+    padding-bottom: 0px;
+    border-width: 2px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
