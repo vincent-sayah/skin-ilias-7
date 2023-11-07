@@ -3,7 +3,7 @@
 
 - Dézipper eformarine.zip dans Customizing/global/skin
 
-- Dans le fichier Customizing/global/skin/eformarine/tpl.page\_content.html adapté la balise href ( lien vers la liste des écoles) de la ligne 35.
+- Dans le fichier Customizing/global/skin/eformarine/tpl.page\_content.html, adapté la balise href ( lien vers la liste des écoles) de la ligne 35.
 
 - Dans le fichier <racine du site>/Services/Object/CommonSettings/TileImage/classes/ class.ilObjectTileImage, commenter la ligne 136 :
 
