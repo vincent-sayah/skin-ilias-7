@@ -14,4 +14,4 @@
 
 - Le skin comporte une étendue « global » eformarine et une étendue « local » accueil
 
-Dans styles et mise en page associé une catégorie au skin « local » comme ci-dessous :
+Dans styles et mise en page associé une catégorie au skin « local »
