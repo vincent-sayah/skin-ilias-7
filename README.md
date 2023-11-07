@@ -11,10 +11,7 @@
 
 - Placer dans l’édition de page voulue le chemin des scripts borderPPE.js et couleurPPE.js pour avoir des tiles qui alterneront entre la couleurs bleu, gris et rouge :
 
-<script src="./Customizing/global/skin/eformarine/js/couleurPPE.js"></script>
-
-
-<script src="./Customizing/global/skin/eformarine/js/borderPPE.js"></script>
+<script src="./Customizing/global/skin/eformarine/js/couleurPPE.js"></script><script src="./Customizing/global/skin/eformarine/js/borderPPE.js"></script>
 
 
 - Le skin comporte une étendue « global » eformarine et une étendue « local » accueil. Dans styles et mise en page associé une catégorie au skin « local »
