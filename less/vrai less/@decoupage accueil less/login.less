@@ -1,0 +1,89 @@
+@color_1: white;
+@color_2: #001b39;
+@background_color_1: #d60725;
+@background_color_2: #001b39;
+@background_color_3: white;
+@background_color_4: #f4f6fb;
+@border_color_1: #d60725;
+@border_color_2: #001b39;
+
+
+
+.ilStartupSection {
+	>.form-horizontal.preventDoubleSubmission {
+		>.form-horizontal {
+			>.ilFormFooter.clearfix {
+				>.col-sm-6.ilFormCmds {
+					>.btn-default.btn.btn-sm {
+						color: @color_1;
+						background-color: @background_color_1;
+						border-color: @border_color_1;
+						border-radius: 20px;
+						box-shadow: 0px -3px 8px #666666;
+						font-size: 10px;
+						padding: 5px 30px 5px 30px;
+						font-weight: 900;
+						margin-right: 15px;
+						margin-bottom: 15px;
+						&:hover {
+							background-color: @background_color_2;
+							border-color: @border_color_2;
+						}
+					}
+				}
+			}
+			>.ilFormHeader {
+				background-color: @background_color_4;
+				text-align: center;
+				>h2.ilHeader {
+					color: @color_2;
+					font-size: 15px;
+					font-weight: bold;
+				}
+			}
+			>.form-group {
+				>.col-sm-3.control-label {
+					color: @color_2;
+					font-weight: bold;
+					font-size: 13px;
+					padding-left: 0px;
+					padding-right: 0px;
+				}
+			}
+		}
+	}
+	>.ilStartupSection {
+		>a.il_ContainerItemCommand {
+			font-size: 11px;
+			font-weight: bold;
+			color: @color_2;
+		}
+	}
+	padding-top: 25px;
+	width: 100%;
+	text-align: center;
+}
+.SectionLogin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Rowlogin {
+	box-shadow: 1px 1px 1px -5px #cbccd1, 5px 4px 5px -1px #0b0b0b;
+}
+.LogoLogin {
+	background-color: @background_color_3;
+}
+div.ilStartupSection {
+	form.form-horizontal {
+		width: 40em;
+	}
+}
+@media (max-width: 680px) {
+	div.ilStartupSection {
+		form.form-horizontal {
+			margin: auto;
+			width: 100%;
+		}
+	}
+}

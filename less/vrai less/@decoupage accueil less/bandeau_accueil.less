@@ -1,0 +1,81 @@
+@color_1: #737373;
+@color_2: #D60725;
+@color_3: #001b39;
+@color_4: white;
+@font_family_1: 'Open Sans';
+@background_color_1: white;
+@background_color_2: #001b39;
+@background_color_3: #f4f6fb;
+
+
+.header-inner {
+	background-color: @background_color_1;
+}
+.breadcrumb_wrapper {
+	background: white;
+	.breadcrumb {
+		>span {
+			&+span {
+				&:before {
+					content: " / ";
+					color: @color_1;
+					padding: 0px 0px;
+					font-family: @font_family_1;
+					font-size: 15px;
+					color: @color_2;
+					font-weight: 700;
+				}
+			}
+		}
+		span.crumb {
+			a {
+				color: @color_3;
+				font-size: 13px;
+				font-weight: 700;
+			}
+		}
+	}
+}
+.breadcrumbs {
+	background-color: @background_color_1;
+}
+#headerimage {
+	width: 45px;
+	height: 45px;
+	margin-top: 3px;
+	margin-right: 10px;
+	filter: brightness(1000);
+}
+.Bandeau_haut_app_fond {
+	background-color: @background_color_2;
+	position: sticky;
+	left: 0px;
+	z-index: 301;
+	top: 0px;
+}
+.Bandeau_haut_app {
+	background-color: @background_color_3;
+	border-radius: 40px 40px 0px 0px;
+	margin-left: 0px;
+	border-left-width: 0px;
+	padding-left: 0px;
+	height: 60px;
+}
+.il-layout-page-content {
+	border-left: 10px solid #001b39;
+}
+.bordure_droite {
+	border-right: 10px solid #001b39;
+}
+div.ilHeaderDesc {
+	font-size: 90%;
+	padding: 0;
+	color: @color_4;
+	font-weight: 600;
+}
+h1.ilHeader {
+	padding: 0px 0 0;
+}
+div.il_HeaderInner.media {
+	margin-bottom: 30px;
+}

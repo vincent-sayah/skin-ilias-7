@@ -1,0 +1,125 @@
+@color_1: white;
+@color_2: #d60725;
+@background_color_1: #D60725;
+@border_color_1: #CBCCD1;
+
+
+
+
+
+
+
+
+
+
+#headerimage {
+	display: none;
+}
+a#il_mhead_t_focus {
+	color: @color_1;
+	vertical-align: middle;
+	font-size: 35px;
+	cursor: default;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+div.il_HeaderInner.media {
+	padding-left: 5%;
+}
+div.ilHeaderDesc {
+	font-size: 27px;
+	padding: 0;
+	color: @color_1;
+	font-weight: 700;
+	width: 300px;
+}
+.media.il_HeaderInner {
+	>.media-body {
+		>.ilHeaderDesc {
+			&:after {
+				content: ".";
+				color: @color_2;
+				font-size: 30px;
+			}
+		}
+	}
+}
+.acces_ecole {
+	bottom: 35px;
+	left: 4%;
+	position: absolute;
+	width: 310px;
+	>.nav-tabs {
+		border-bottom: none;
+		>li {
+			>a {
+				border-radius: 40px;
+				font-weight: 600;
+				background-color: @background_color_1;
+			}
+		}
+	}
+}
+.tab-menu {
+	position: ;
+	bottom: 20px;
+	left: 35%;
+	position: absolute;
+}
+.tab-sousmenu {
+	position: absolute;
+	left: 35%;
+	top: 90%;
+}
+.img-hautbandeau {
+	position: absolute;
+	left: 80%;
+	background: transparent url("images/style_eformarine/ordi.png") no-repeat;
+	width: 250px;
+	height: 100%;
+	background-size: contain;
+}
+} {
+	div.ilc_section_Separator {
+		border-top-style: solid;
+		border-color: @border_color_1;
+		padding-bottom: 0px;
+		border-width: 2px;
+		padding-top: 0px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+}
+a.ilc_section_Separator {
+	border-top-style: solid;
+	border-color: @border_color_1;
+	padding-bottom: 0px;
+	border-width: 2px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+@media screen {
+	@media(max-width: {
+		1040px) {
+			.tab-menu { display: none;
+		}
+		466px) {
+			.tab-menu { display: none;
+		}
+	}
+	.tab-sousmenu {
+		display: none;
+		display: none;
+	}
+	.img-hautbandeau {
+		position: absolute;
+		left: 70%;
+		background: transparent url("images/style_eformarine/ordi.png") no-repeat;
+		width: 150px;
+		height: 100%;
+		background-size: contain;
+		top: 70px;
+		display: none;
+	}
+}

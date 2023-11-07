@@ -1,0 +1,53 @@
+@color_1: white;
+@background_color_1: #F4F6FB;
+@background_color_2: #CBCCD1;
+
+
+a.il-link.link-bulky {
+	&:hover {
+		.bulky-label {
+			color: @color_1;
+		}
+		.icon {
+			filter: invert(1);
+		}
+	}
+}
+.il-maincontrols-slate-content {
+	>.btn.btn-bulky.disengaged {
+		&:hover {
+			.icon {
+				filter: invert(1);
+			}
+		}
+	}
+	>.btn.btn-bulky.engaged {
+		&:focus {
+			.icon {
+				filter: invert(1);
+			}
+		}
+		&:hover {
+			.icon {
+				filter: invert(1);
+			}
+		}
+	}
+}
+.ilExplorerContainer {
+	background-color: @background_color_1;
+}
+.jstree.jstree-default {
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.il-mainbar-close-slates {
+	background-color: @background_color_2;
+}
+.icon.small {
+	height: 35px;
+	line-height: 20px;
+}

@@ -1,0 +1,6 @@
+Ajout a la fin du fichier tpl.footer.html l'appel du script tuile.js
+
+<script src="./Customizing/global/skin/eformarine/js/tuile.js"></script>
+
+
+SAYAH VINCENT

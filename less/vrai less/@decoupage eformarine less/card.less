@@ -1,0 +1,124 @@
+@color_1: #001b39;
+@color_2: #d60725;
+@background_color_1: white;
+@background_color_2: #001b39;
+@background_color_3: inherit;
+
+
+
+@media (min-width: 1200px) {
+	.col-lg-3 {
+		width: 20%;
+	}
+}
+.row-eq-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.il-card.thumbnail {
+	margin-bottom: 0px;
+	font-size: 12px;
+	border: 1px solid #CBCCD1;
+	box-shadow: 1px 1px 1px -5px #cbccd1, 5px 4px 5px -1px #cbccd1;
+	background-color: @background_color_1;
+}
+.il-card {
+	.il-card-repository-head {
+		background-color: @background_color_2;
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 47px;
+		padding: 0 6px;
+		z-index: 300;
+		padding-left: 10px;
+		padding-right: 10px;
+		>div.il-card-repository-dropdown {
+			>.dropdown {
+				>button {
+					background-color: @background_color_3;
+					border: 0px;
+					width: 29px;
+					height: 29px;
+					>span.caret {
+						display: block;
+						margin-left: auto;
+						margin-right: auto;
+						display: inline-block;
+						width: 0;
+						height: 0;
+						margin-left: px;
+						vertical-align: middle;
+						border-top: 10px dashed;
+						border-top: 7px solid \9;
+						border-right: 7px solid transparent;
+						border-left: 7px solid transparent;
+					}
+				}
+				>button.btn-default {
+					&:hover {
+						color: @color_2;
+					}
+				}
+			}
+		}
+	}
+	.il-card-image-container {
+		width: 100%;
+		padding-top: 40%;
+		position: relative;
+		border-bottom: 2px solid #CBCCD1;
+		&:hover {
+			filter: contrast(1.2);
+		}
+	}
+	img.img-responsive {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: auto;
+		max-height: 100%;
+		z-index: 100;
+	}
+	img.img-standard {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: auto;
+		max-height: 100%;
+		z-index: 100;
+	}
+	.caption {
+		padding-top: 6px;
+		overflow-wrap: break-word;
+		word-break: break-word;
+		font-weight: 650;
+		color: @color_1;
+	}
+	.card-title {
+		.btn {
+			font-size: 16px;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: @color_1;
+			text-align: right;
+		}
+		a {
+			font-size: 16px;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: @color_1;
+			text-align: right;
+		}
+	}
+}
+.caption.card-title {
+	text-align: right;
+}

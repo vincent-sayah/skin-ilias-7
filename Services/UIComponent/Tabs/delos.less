@@ -1,0 +1,110 @@
+/* Services/UIComponent/Tabs */
+
+.nav-tabs {
+	> li {
+		margin: 0 10px 0 0;
+		border-radius: 10px;
+
+		/*background-color: #CBCCD1;*/
+
+	
+	
+		> a {
+			border-radius: 10px;
+			/* -webkit-box-shadow: 1px 3px 6px 3px rgba(0,0,0,0.88);  */
+			/* box-shadow: 1px 3px 6px 3px rgba(0,0,0,0.88);  */
+			-webkit-box-shadow: 1px 1px 1px -5px #001b39, 5px 4px 5px -1px #001b39;
+			box-shadow: 1px 1px 1px -5px #001b39, 5px 4px 5px -1px #001b39;
+			border: 0 none;
+			padding: 6px 12px 3px;
+			font-size: ceil((@font-size-base * 1));
+			/* background-color: #CBCCD1; */
+			background-color: #a7a4a4;
+			margin: 0;
+			color:white;
+
+			
+			&:hover {
+				background-color:#D60725;
+				color:white;
+			
+			}
+		}
+				
+		
+		/*Active state, and its :hover to override normal :hover*/
+		&.active > a {
+			&,
+			&:hover,
+			&:focus {				
+				/*color: @il-link-color;*/
+				background-color:#D60725;
+				color:white;
+				text-decoration: none; 
+			
+			}		
+		
+		}
+
+	}
+}
+
+[dir="rtl"] .nav-tabs {
+	> li {
+		margin: 0 0 0 4px;
+		float: right;
+	}
+}
+
+#ilTab {
+	padding: 0;
+	margin:  7px 15px 23px;
+	border: 0 none;
+}
+
+#ilTab a:focus-visible {
+	z-index: 3;
+}
+
+.ilSetupContent #ilTab {
+	margin:  7px 0 23px;
+}
+
+.ilTabsContentOuter {
+	padding: 0;
+}
+
+/* Sub Tabs */
+#ilSubTab {
+	padding: 5px 20px;
+	margin: -23px 0 10px;
+	font-weight: 700;
+	
+	
+	> li {
+		
+		> a {
+			/*border-radius: 10px;*/
+			padding: 3px 7px;
+			/*background-color: #043775;*/
+			color:#000000;
+			font-size: (@font-size-small * 1);
+			/*background-color: #043775;*/
+
+			&:hover {
+				color:#D60725;
+				background-color:transparent;
+			}
+		}
+		&.active > a {
+			&,
+			&:hover,
+			&:focus {
+				background-color:transparent;
+				color:#D60725;
+				font-weight: 700;
+				text-decoration-color: #D60725;
+			}
+		}
+	}
+}
